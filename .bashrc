@@ -198,7 +198,7 @@ if [ "$TERM" == "screen" ]
 		. <(npm completion)
 
 		# Only load Liquid Prompt in interactive shells, not from a script or from scp
-		[[ $- = *i* ]] && source ~/source/liquidprompt/liquidprompt
+		[[ $- = *i* ]] && source ~/.liquidprompt/liquidprompt
 	else
 		[ -r /home/efreak/.byobu/prompt ] && . /home/efreak/.byobu/prompt   #byobu-prompt#
 fi
