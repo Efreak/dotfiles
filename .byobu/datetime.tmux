@@ -1,0 +1,2 @@
+BYOBU_TIME="%H:%M"
+BYOBU_DATE=
