@@ -10,7 +10,7 @@ compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=5000
+HISTSIZE=500
 SAVEHIST=10000
 setopt autocd beep notify
 bindkey -e
@@ -20,6 +20,7 @@ if [[ "$TERM" == "screen" ]]
 	then
 		export TERM=screen-256color #if it breaks something, it's because you're stupid, not because it shouldn't be done
 		source $HOME/.antigen/antigen-repo/antigen.zsh
+		source $HOME/source/dotfiles/sources/command-not-found.init.zsh
 		antigen bundle unixorn/autoupdate-antigen.zshplugin
 		antigen bundle nojhan/liquidprompt
 		antigen bundle zsh-users/zsh-syntax-highlighting
