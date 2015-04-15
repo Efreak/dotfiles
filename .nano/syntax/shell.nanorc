@@ -1,4 +1,4 @@
-syntax "sh" "\.sh$" "\.bash$" "bashrc$" "bash_profile$" "\.bash_funcs$"
+syntax "sh" "\.sh$" "\.bash$" "bashrc$" "bash_profile$" "\.bash_funcs$" "zshrc$" "bash_aliases$" "bash_completion$"
 header "^#!.*/(env +)?(ba|k|pdk)?sh[-0-9_]*( |$)"
 
 color brightblue "^[A-Za-z0-9_+-]+[[:space:]]*\(\)"
