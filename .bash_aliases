@@ -7,7 +7,6 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-alias df='df -hT /dev/mmcblk0p1 /dev/mmcblk0p2 /media/webservershares/dandrive /media/webservershares/netdrive'
 alias nodejs='node'
 alias sr='screen -r'
 alias sdms='screen -dmS'
@@ -66,3 +65,5 @@ alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 alias mountall='sudo mount -a'
 alias back='cd "$OLDPWD"'
 alias less='less -FSR'
+alias du='cdu -d'
+alias df="dfc -t vfat,ext4,ext3,ntfs -WT && dfc -c always -fWT|grep -E 'drive$' --color=always|head -n 2"
