@@ -1,3 +1,35 @@
 [submodule ".antigen/antigen-repo"]
 	path = .antigen/antigen-repo
 	url = git://github.com/zsh-users/antigen.git
+
+[submodule ".antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-nojhan-SLASH-liquidprompt.git"]
+	path = .antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-nojhan-SLASH-liquidprompt.git
+	url = https://github.com/nojhan/liquidprompt.git
+
+[submodule ".antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git"]
+	path = .antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+
+[submodule ".antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-joel-porquet-SLASH-zsh-dircolors-solarized.git"]
+	path = .antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-joel-porquet-SLASH-zsh-dircolors-solarized.git
+	url = https://github.com/joel-porquet/zsh-dircolors-solarized.git
+
+[submodule ".antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-djui-SLASH-alias-tips.git"]
+	path = .antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-djui-SLASH-alias-tips.git
+	url = https://github.com/djui/alias-tips.git
+
+[submodule ".antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-chrissicool-SLASH-zsh-256color.git"]
+	path = .antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-chrissicool-SLASH-zsh-256color.git
+	url = https://github.com/chrissicool/zsh-256color.git
+
+[submodule ".antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-chrissicool-SLASH-zsh-bash.git"]
+	path = .antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-chrissicool-SLASH-zsh-bash.git
+	url = https://github.com/chrissicool/zsh-bash.git
+
+[submodule ".antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-zsh-users-SLASH-zsh-syntax-highlighting.git"]
+	path = .antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-zsh-users-SLASH-zsh-syntax-highlighting.git
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+
+[submodule ".antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-unixorn-SLASH-autoupdate-antigen.zshplugin.git"]
+	path = .antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-unixorn-SLASH-autoupdate-antigen.zshplugin.git
+	url = https://github.com/unixorn/autoupdate-antigen.zshplugin.git
