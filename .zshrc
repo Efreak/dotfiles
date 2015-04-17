@@ -87,7 +87,9 @@ if [[ "$TERM" == "screen" ]]
 		keychain
 
 		### npm autocomplete. Why is this not a script? Who knows.
-		. <(npm completion)
+		if ! type "npm" > /dev/null; then
+			. <(npm completion)
+		fi
 
 		setopt HIST_NO_STORE INC_APPEND_HISTORY HIST_SAVE_NO_DUPS PUSHD_TO_HOME BASH_AUTO_LIST COMPLETE_ALIASES LIST_PACKED 
 	else
