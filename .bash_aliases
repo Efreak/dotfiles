@@ -47,7 +47,7 @@ alias .4='cd ../../../../'
 alias .5='cd ../../../../..'
 alias mkdir='mkdir -pv'
 alias diff='colordiff'
-alias mount='mount |column -t'
+alias mount='acoc colmount'
 alias h='history'
 alias j='jobs -l'
 # do not delete / or prompt if deleting more than 3 files at a time #
@@ -66,4 +66,4 @@ alias mountall='sudo mount -a'
 alias back='cd "$OLDPWD"'
 alias less='less -FSR'
 alias du='cdu -d'
-alias df="dfc -t vfat,ext4,ext3,ntfs -WT && dfc -c always -fWT|grep -E 'drive$' --color=always|head -n 2"
+alias df="dfc -t vfat,ext4,ext3,ntfs -WT && dfc -c always -fWT|grep -E 'drive$'|head -n 2"

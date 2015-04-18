@@ -79,8 +79,8 @@ if [[ "$TERM" == "screen" ]]
 			. $HOME/.bash_funcs
 		fi
 
-		### Added by the Heroku Toolbelt
-		export PATH="/usr/local/heroku/bin:$PATH"
+		# Need to `gem install acoc` to use colored commands...
+		export PATH="/usr/local/heroku/bin:$HOME/.bin:$HOME/.gem/ruby/1.9.1/bin:$PATH"
 		#color manpages
 		export PAGER="/usr/bin/most -s"
 
@@ -92,6 +92,9 @@ if [[ "$TERM" == "screen" ]]
 		fi
 
 		setopt HIST_NO_STORE INC_APPEND_HISTORY HIST_SAVE_NO_DUPS PUSHD_TO_HOME BASH_AUTO_LIST COMPLETE_ALIASES LIST_PACKED 
+		bindkey '5D' emacs-backward-word
+		bindkey '5C' emacs-forward-word
+		export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 	else
 		[ -r /home/efreak/.byobu/prompt ] && . /home/efreak/.byobu/prompt   #byobu-prompt#
 fi
