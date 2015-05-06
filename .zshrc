@@ -20,7 +20,7 @@ if [[ "$TERM" == "screen" ]]
 	then
 		export TERM=screen-256color #if it breaks something, it's because you're stupid, not because it shouldn't be done
 		source $HOME/.antigen/antigen-repo/antigen.zsh
-		source $HOME/source/dotfiles/sources/command-not-found.init.zsh
+		source $HOME/.antigen/command-not-found.init.zsh
 		antigen bundle unixorn/autoupdate-antigen.zshplugin
 		antigen bundle nojhan/liquidprompt
 		antigen bundle zsh-users/zsh-syntax-highlighting
@@ -95,6 +95,7 @@ if [[ "$TERM" == "screen" ]]
 		bindkey '5D' emacs-backward-word
 		bindkey '5C' emacs-forward-word
 		export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
+		fortune -sn 60|toilet -w $[COLUMNS - 5]|cowsay -n|lolcat
 	else
 		[ -r /home/efreak/.byobu/prompt ] && . /home/efreak/.byobu/prompt   #byobu-prompt#
 fi
