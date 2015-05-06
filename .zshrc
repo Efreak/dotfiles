@@ -16,7 +16,7 @@ setopt autocd beep notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
-if [[ "$TERM" == "screen" ]]
+if [[ "$TERM" != "screen-256color" ]]
 	then
 		export TERM=screen-256color #if it breaks something, it's because you're stupid, not because it shouldn't be done
 		source $HOME/.antigen/antigen-repo/antigen.zsh
